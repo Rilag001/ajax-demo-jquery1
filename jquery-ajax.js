@@ -15,7 +15,13 @@ $.get('http://api.spotify.com/v1/users/rickylagerkvist', function(data, textStat
   // Visa texten från servern i stycket (<p>) med id:t show-server-text
   $('#show-server-text').text(data);
 
-} ).fail(function() { console.log("Request gav fel!")})
+} ).fail(function(jqXHR, errorStatus, errorThrown) { 
+  console.log("Request gav fel!");
+  console.log("jqHRX:" + jqXHR);
+  console.log("errorStatus" + errorStatus);
+  console.log("errorThrown" + errorThrown);
+  
+  })
 } 
 );
 
