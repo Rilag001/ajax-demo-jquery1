@@ -29,7 +29,7 @@ $('#spotify-button').click(function() {
   // Gör en request med jQuery mot Spotify's API
   
   var url = "http://api.spotify.com/v1/users/";
-  var username =  $("#spotifyusername").text();
+  var username =  $("#spotifyusername").val();
   
   //.attr('value');
   
