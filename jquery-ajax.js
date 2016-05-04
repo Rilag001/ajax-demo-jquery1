@@ -5,8 +5,7 @@
 $('#my-button').click(function() { 
   console.log("Knappen klickades på!") 
   
-  
-$.get('http://api.spotify.com/v1/users/rickylagerkvist', function(data, textStatus, jqXHR) {
+$.get('http://mardby.se/AJK15G/lorem_text.php', function(data, textStatus, jqXHR) {
   
   // Vilken status
   console.log(textStatus);
@@ -24,4 +23,14 @@ $.get('http://api.spotify.com/v1/users/rickylagerkvist', function(data, textStat
   })
 } 
 );
+
+// klicka på spotifyknappen
+$('spotify-button').click(function {
+  // Gör en request med jQuery mot Spotify's API
+  var url = "http://api.spotify.com/v1/users/rickylagerkvist";
+  
+  $.get(url, funktion(data, textStatus, jqXHR) {
+    $('spotify-response').text(data);
+  })
+});
 
