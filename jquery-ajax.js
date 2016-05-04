@@ -25,7 +25,7 @@ $.get('http://mardby.se/AJK15G/lorem_text.php', function(data, textStatus, jqXHR
 );
 
 // klicka på spotifyknappen
-$('spotify-button').click(function {
+$('spotify-button').click(function() {
   // Gör en request med jQuery mot Spotify's API
   var url = "http://api.spotify.com/v1/users/rickylagerkvist";
   
