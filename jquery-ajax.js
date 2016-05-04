@@ -31,7 +31,7 @@ $('#randomnumberbutton').click(function() {
   var minNr =  $("#minnumber").val();
   var maxNr =  $("#maxnumber").val();
   
-  var randomnumber= "http://ricky-rapid-api.rapidapi.io/random-number?min="+ minNr + "&max=" + maxNr";
+  var randomnumber= "http://ricky-rapid-api.rapidapi.io/random-number?min="+ minNr + "&max=" + maxNr;
   
   console.log(randomnumber);
   
