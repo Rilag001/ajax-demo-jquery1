@@ -24,6 +24,21 @@ $.get('http://mardby.se/AJK15G/lorem_text.php', function(data, textStatus, jqXHR
 } 
 );
 
+// klicka för att få random number
+$('$randomnumberbutton').click(funktion {
+  var randomnumber= "http://ricky-rapid-api.rapidapi.io/random-number"
+  
+  console.log(randomnumber);
+  
+  $.get(randomnumber, funkction(data, textStatus, jqXHR) {
+    
+    var responseBody = data;
+    
+    $('#randomnumbertext').text(responseBody);
+    
+  })
+});
+
 // klicka på spotifyknappen
 $('#spotify-button').click(function() {
   // Gör en request med jQuery mot Spotify's API
