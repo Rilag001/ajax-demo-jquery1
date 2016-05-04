@@ -26,7 +26,7 @@ $.get('http://mardby.se/AJK15G/lorem_text.php', function(data, textStatus, jqXHR
 
 // klicka för att få random number
 $('$randomnumberbutton').click(funktion {
-  var randomnumber= "http://ricky-rapid-api.rapidapi.io/random-number?min=10&max=50"
+  var randomnumber= "http://ricky-rapid-api.rapidapi.io/random-number?min=10&max=50";
   
   console.log(randomnumber);
   
