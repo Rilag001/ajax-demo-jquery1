@@ -34,7 +34,7 @@ $('$randomnumberbutton').click(funktion {
     
     var responseBody = data;
     
-    $('#randomnumbertext').text(responseBody);
+    $('#randomnumbertext').text(randomnumber);
     
   })
 });
