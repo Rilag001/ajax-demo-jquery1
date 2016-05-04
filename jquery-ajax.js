@@ -6,7 +6,7 @@ $('#my-button').click(function() {
   console.log("Knappen klickades på!") 
   
   
-$.get('https://api.github.com/zen', function(data, textStatus, jqXHR) {
+$.get('http://feber.se/video/', function(data, textStatus, jqXHR) {
   
   // Visa texten från servern i stycket (<p>) med id:t show-server-text
   $('#show-server-text').text(data);
