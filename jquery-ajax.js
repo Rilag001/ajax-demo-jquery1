@@ -46,11 +46,6 @@ $('#spotify-button').click(function() {
   var url = "http://api.spotify.com/v1/users/";
   var username =  $("#spotifyusername").val();
   
-  //.attr('value');
-  
-  //$('#spotifyusername').val();
-
-  
   console.log(url+username);
   
   $.get(url+username, function(data, textStatus, jqXHR) {
