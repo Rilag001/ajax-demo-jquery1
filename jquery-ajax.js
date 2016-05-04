@@ -30,10 +30,10 @@ $('#spotify-button').click(function() {
   
   var url = "http://api.spotify.com/v1/users/rickylagerkvist";
   
-  $.get(url, funktion(data, textStatus, jqXHR) {
-    var response-body = data;
+  $.get(url, function(data, textStatus, jqXHR) {
+    var responseBody = data;
     
-    $('#spotify-response').text(data);
+    $('#spotify-response').text(responseBody.display_name);
   })
 });
 
