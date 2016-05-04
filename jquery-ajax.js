@@ -28,9 +28,10 @@ $.get('http://mardby.se/AJK15G/lorem_text.php', function(data, textStatus, jqXHR
 $('#spotify-button').click(function() {
   // Gör en request med jQuery mot Spotify's API
   
-  var url = "http://api.spotify.com/v1/users/rickylagerkvist";
+  var url = "http://api.spotify.com/v1/users/";
+  var username = $('username');
   
-  $.get(url, function(data, textStatus, jqXHR) {
+  $.get(url+username, function(data, textStatus, jqXHR) {
     var responseBody = data;
     
     $('#spotify-response').text(responseBody.display_name);
